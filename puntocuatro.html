@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--link de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emisora</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <!-- Ingreso De La Persona-->
+            <h1>Ingresar Persona</h1>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre"  placeholder="Ingrese el nombre de la persona">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cedula">Cedula</label>
+                <input type="number" class="form-control" id="cedula" placeholder="Ingrese la cedula de la persona">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese la cedula de la persona">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="ciudadresidencia">Ciudad de residencia</label>
+                <input type="text" class="form-control" id="ciudadresidencia" placeholder="Ingrese la ciudad de residencia">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="ciudadorigen">Ciudad de origen</label>
+                <input type="text" class="form-control" id="ciudadorigen" placeholder="Ingrese la ciudad de origen">
+            </div>
+            <!-- Ingreso De  Artista-->
+            <br>
+            <h1>Ingresar Artista</h1>
+            <div class="form-group">
+                <label for="nombreartista">Nombre Del Artista</label>
+                <input type="text" class="form-control" id="nombreartista" aria-describedby="emailHelp" placeholder="Ingrese el nombre de la persona">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cancion1">Cancion 1</label>
+                <input type="text" class="form-control" id="cancion1" placeholder="Ingrese la cancion">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cancion2">Cancion 2</label>
+                <input type="text" class="form-control" id="cancion2" placeholder="Ingrese la cancion">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cancion3">Cancion 3</label>
+                <input type="text" class="form-control" id="cancion3" placeholder="Ingrese la cancion">
+            </div>
+            <br>
+            <div class="form-group">
+                <button class="btn btn-primary btn-lg" id="registrar" >Registrar</button>
+            </div>
+        </div>
+        <!-- Mostrar el artista buscado-->
+        <div class="col-sm">
+            <h1>Buscar persona</h1>
+            <br>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="vectorpersona" placeholder="Ingrese el vector de la persona">
+                <div class="input-group-append">
+                  <button class="btn btn-warning" id="boton2" type="button">Buscar</button>
+                </div>
+            </div>
+            <table class="table table-bordered" id="tabla1">  
+            </table>
+        </div>
+    </div>
+</div>
+    
+
+    
+        
+    
+<script src="puntocuatro.js"></script>
+</body>
+</html>
